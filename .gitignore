@@ -1,0 +1,54 @@
+
+# General files
+*~
+*.lock
+*.DS_Store
+*.Trashes
+*.swp
+*.out
+*.bak
+
+# SVN
+.svn
+
+# Maven
+.m2
+target/
+
+# Eclipse
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+.classpath
+.settings/
+.loadpath
+local.properties
+*~.nib
+*.launch
+.externalToolBuilders/
+
+# Intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Java 
+*.class
+*.jar
+*.war
+*.ear
+*.db
+
+
