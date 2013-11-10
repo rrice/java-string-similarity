@@ -68,8 +68,8 @@ public class StringSimilarityServiceImpl implements StringSimilarityService {
 
     /**
      * Calculates the similarity score of a single feature.
-     * @param The feature string to compare.
-     * @param The target string to compare against the feature.
+     * @param feature The feature string to compare.
+     * @param target The target string to compare against the feature.
      * @return The similarity score between the feature and target.
      */
     public double score(String feature, String target)

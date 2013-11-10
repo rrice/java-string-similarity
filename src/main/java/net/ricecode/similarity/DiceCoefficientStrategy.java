@@ -30,7 +30,7 @@ import java.util.TreeSet;
 /**
  * A strategy that uses the Dice's Coefficient to calculate the similarity of two strings.
  * @author Ralph Allan Rice <ralph.rice@gmail.com>
- * @see http://en.wikipedia.org/wiki/Dice%27s_coefficient
+ * @see <a href="http://en.wikipedia.org/wiki/Dice%27s_coefficient">About Dice Coefficient</a>
  */
 public class DiceCoefficientStrategy implements SimilarityStrategy {
 

@@ -35,7 +35,7 @@ public class SimilarityScore {
 	
 	/**
 	 * Constructs a similarity score.
-	 * @param text The string key.
+	 * @param key The string key.
 	 * @param score The score value.
 	 */
 

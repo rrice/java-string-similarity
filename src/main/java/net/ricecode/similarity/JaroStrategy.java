@@ -26,7 +26,7 @@ package net.ricecode.similarity;
 /**
  * A strategy that uses the Jaro Distance to calculate the similarity of two strings.
  * @author Ralph Allan Rice <ralph.rice@gmail.com>
- * @see http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
+ * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">About Jaro Distance</a>
  */
 public class JaroStrategy implements SimilarityStrategy {
 

@@ -27,7 +27,7 @@ package net.ricecode.similarity;
  * A strategy that uses the Jaro-Winkler Distance to calculate the similarity of two strings.
  * 
  * @author Ralph Allan Rice <ralph.rice@gmail.com>
- * @see See http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
+ * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">About Jaro-Wrinkler Distance</a>
  */
 public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrategy {
 	final double DEFAULT_SCALING_FACTOR = 0.1;  // This is the default scaling factor Winkler used.
@@ -36,8 +36,7 @@ public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrat
     
     /**
      * Constructs a new JaroWinklerStrategy instance.
-     * @param scalingFactor The scaling factor between 0.00 and 0.25.
-     * @remarks If the scaling factor is greater than 0.25, the scaling factor is set to 0.25.
+     * @param scalingFactor The scaling factor between 0.00 and 0.25. If the scaling factor is greater than 0.25, the scaling factor is set to 0.25.
      */
     public JaroWinklerStrategy(double scalingFactor)
     {
