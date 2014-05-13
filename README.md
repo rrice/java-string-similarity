@@ -20,6 +20,7 @@ Algorithms
 
 * [Jaro distance](http://www.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
 * [Jaro-Winkler distance](http://www.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance)
+* [Levenshtein distance](http://www.wikipedia.org/wiki/Levenshtein_distance)
 * [Sørensen–Dice coefficient](http://www.wikipedia.org/wiki/Sørensen–Dice_coefficient)
 
 
@@ -46,7 +47,7 @@ TODO
 ----
 
 * Ant/Ivy build scripts.
-* [Levenshtein distance](http://www.wikipedia.org/wiki/Levenshtein_distance)
+
 * [Jaccard index](http://www.wikipedia.org/wiki/Jaccard_index)
 
 
