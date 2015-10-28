@@ -16,6 +16,18 @@
 	<mockito.version>1.8.5</mockito.version>
   </properties>
 
+  <profiles>
+    <profile>
+      <id>doclint-java8-disable</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
+      <properties>
+        <javadoc.opts>-Xdoclint:none</javadoc.opts>
+      </properties>
+    </profile>
+  </profiles>
+
   <dependencies>
   	<dependency>
 			<groupId>org.mockito</groupId>
@@ -69,7 +81,7 @@
                       <goal>jar</goal>
                     </goals>
                     <configuration>
-                        <additionalparam>-Xdoclint:none</additionalparam>
+                        <additionalparam>${javadoc.opts}</additionalparam>
                     </configuration>
                 </execution>
             </executions>
