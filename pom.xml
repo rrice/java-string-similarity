@@ -1,183 +1,155 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>net.ricecode</groupId>
-  <artifactId>string-similarity</artifactId>
-  <version>1.0.0</version>
-  <packaging>jar</packaging>
+	<groupId>net.ricecode</groupId>
+	<artifactId>string-similarity</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
-  <name>string-similarity</name>
-  <url>http://www.ricecode.net</url>
+	<name>string-similarity</name>
+	<url>http://www.ricecode.net</url>
 
-  <licenses>
-    <license>
-      <name>The MIT License</name>
-      <url>https://opensource.org/licenses/MIT</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  
-  <scm>
-    <connection>scm:git:git@github.com:rrice/java-string-similarity.git</connection>
-    <developerConnection>scm:git:git@github.com:rrice/java-string-similarity.git</developerConnection>
-    <url>https://github.com/rrice/java-string-similarity</url>
-    <tag>HEAD</tag>
-  </scm>
-  
-  <developers>
-  	<developer>
-  	  <name>Ralph Allan Rice</name>
-  	  <url>http://www.ricecode.net/</url>
-  	</developer>
-  </developers>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <junit.version>4.8.2</junit.version>
-    <mockito.version>1.8.5</mockito.version>
-  </properties>
-  
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>http://www.opensource.org/licenses/mit-license.php</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
+	<issueManagement>
+		<url>https://github.com/rrice/java-string-similarity/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
 
-  <issueManagement>
-    <url>https://github.com/rrice/java-string-similarity/issues</url>
-    <system>GitHub Issues</system>
-  </issueManagement>
+	<scm>
+		<url>https://github.com/rrice/java-string-similarity</url>
+		<connection>scm:git:git://github.com/rrice/java-string-similarity.git</connection>
+		<developerConnection>scm:git:git@github.com:rrice/java-string-similarity.git</developerConnection>
+	</scm>
 
-  <scm>
-    <url>https://github.com/rrice/java-string-similarity</url>
-    <connection>scm:git:git://github.com/rrice/java-string-similarity.git</connection>
-    <developerConnection>scm:git:git@github.com:rrice/java-string-similarity.git</developerConnection>
-  </scm>
-  
-  <developers>
-    <developer>
-      <email>ralph.rice@gmail.com</email>
-      <name>Ralph Allan Rice</name>
-      <url>https://github.com/rrice</url>
-      <id>rrice</id>
-    </developer>
-  </developers>
+	<developers>
+		<developer>
+			<email>ralph.rice@gmail.com</email>
+			<name>Ralph Allan Rice</name>
+			<url>https://github.com/rrice</url>
+			<id>rrice</id>
+		</developer>
+	</developers>
 
-  <profiles>
-    <profile>
-      <id>doclint-java8-disable</id>
-      <activation>
-        <jdk>[1.8,)</jdk>
-      </activation>
-      <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-      </properties>
-    </profile>
-    <profile>
-        <id>release</id>
-        <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-gpg-plugin</artifactId>
-                    <version>1.6</version>
-                    <executions>
-                        <execution>
-                            <id>sign-artifacts</id>
-                            <phase>verify</phase>
-                            <goals>
-                                <goal>sign</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </build>
-    </profile>
-  </profiles>
+	<profiles>
+		<profile>
+			<id>doclint-java8-disable</id>
+			<activation>
+				<jdk>[1.8,)</jdk>
+			</activation>
+			<properties>
+				<javadoc.opts>-Xdoclint:none</javadoc.opts>
+			</properties>
+		</profile>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
-  <dependencies>
-  	<dependency>
+	<dependencies>
+		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
 			<version>${mockito.version}</version>
 			<scope>test</scope>
-	</dependency>
-	<dependency>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-  </dependencies>
-  <build>
-  	<plugins>
-  		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.3</version>
-			<configuration>
-				<source>1.5</source>
-				<target>1.5</target>
-				<showwarnings>false</showwarnings>
-				<showdeprecation>false</showdeprecation>
-			</configuration>
-		</plugin>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-source-plugin</artifactId>
-			<version>2.4</version>
-			<executions>
-				<execution>
-				    <id>attach-source</id>
-					<goals>
-                        <goal>jar-no-fork</goal>
-						<goal>test-jar-no-fork</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>2.9.1</version>
-            <configuration>
-                <show>public</show>
-            </configuration>
-            <executions>
-                <execution>
-                    <id>attach-javadocs</id>
-                    <goals>
-                      <goal>jar</goal>
-                    </goals>
-                    <configuration>
-                        <additionalparam>${javadoc.opts}</additionalparam>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-release-plugin</artifactId>
-            <version>2.6</version>
-            <configuration>
-                <tagNameFormat>@{project.version}</tagNameFormat>
-            </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.3</version>
-            <extensions>true</extensions>
-            <configuration>
-                <serverId>ossrh</serverId>
-                <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                <autoReleaseAfterClose>true</autoReleaseAfterClose>
-            </configuration>
-        </plugin>
-  	</plugins>
-  </build>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+					<showwarnings>false</showwarnings>
+					<showdeprecation>false</showdeprecation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>attach-source</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+							<goal>test-jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<show>public</show>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>${javadoc.opts}</additionalparam>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<tagNameFormat>@{project.version}</tagNameFormat>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.3</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
