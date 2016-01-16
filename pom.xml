@@ -35,8 +35,36 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.8.2</junit.version>
-	<mockito.version>1.8.5</mockito.version>
+    <mockito.version>1.8.5</mockito.version>
   </properties>
+  
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <url>https://github.com/rrice/java-string-similarity/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <scm>
+    <url>https://github.com/rrice/java-string-similarity</url>
+    <connection>scm:git:git://github.com/rrice/java-string-similarity.git</connection>
+    <developerConnection>scm:git:git@github.com:rrice/java-string-similarity.git</developerConnection>
+  </scm>
+  
+  <developers>
+    <developer>
+      <email>ralph.rice@gmail.com</email>
+      <name>Ralph Allan Rice</name>
+      <url>https://github.com/rrice</url>
+      <id>rrice</id>
+    </developer>
+  </developers>
 
   <profiles>
     <profile>
