@@ -8,6 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>string-similarity</name>
+	<description>A Java library that implements several algorithms that calculate similarity between strings.</description>
 	<url>http://www.ricecode.net</url>
 
 	<properties>
