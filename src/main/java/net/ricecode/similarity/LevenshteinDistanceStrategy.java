@@ -4,8 +4,8 @@ package net.ricecode.similarity;
  * A strategy that uses the Levenshtein's Distance to calculate the <i>edit distance</i> of two strings.
  * Then it converts this to a "score" to fit the framework.
  *
- * @see http://en.wikipedia.org/wiki/Levenshtein_distance
- */
+ * @see <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">About Levenshtein Distance</a>
+*/
 public class LevenshteinDistanceStrategy implements SimilarityStrategy {
     /**
      * Calculates the similarity score of objects, where 0.0 implies absolutely no similarity
