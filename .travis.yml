@@ -9,4 +9,4 @@ jdk:
     - openjdk7
 
 script:
-  - ./gradlew build --scan -s
+  - ./gradlew build
