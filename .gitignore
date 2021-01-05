@@ -53,3 +53,6 @@ nb-configuration.xml
 
 
 .gradle
+
+# Exceptions
+!/gradle/**
