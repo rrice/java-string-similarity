@@ -1,4 +1,8 @@
-[![Build Status][status-build]][travis-build]
+
+[![License: MIT](https://img.shields.io/github/license/rrice/java-string-similarity)](https://opensource.org/licenses/MIT)
+[![Issues](https://img.shields.io/github/issues/rrice/java-string-similarity)](https://github.com/rrice/java-string-similarity/actions)
+![Java CI](https://github.com/rrice/java-string-similarity/workflows/Java%20CI%20with%20Gradle/badge.svg)
+
 
 [java-string-similarity](https://github.com/rrice/java-string-similarity) that calculates a normalized distance or similarity score between two strings. A score of 0.0 means that the two strings are absolutely dissimilar, and 1.0 means that absolutely similar (or equal). Anything in between indicates how similar each the two strings are.
 
@@ -49,8 +53,4 @@ TODO
 * Ant/Ivy build scripts.
 
 * [Jaccard index](http://www.wikipedia.org/wiki/Jaccard_index)
-
-
-[status-build]: https://travis-ci.org/rrice/java-string-similarity.svg?branch=master
-[travis-build]: https://travis-ci.org/rrice/java-string-similarity
 
